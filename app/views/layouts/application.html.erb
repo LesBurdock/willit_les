@@ -16,7 +16,7 @@
     <meta name="mobile-web-app-capable"  content="yes">
     <link rel="manifest" href="<%= asset_path 'manifest.json' %>">
     <%= render 'shared/ios_pwa_links' %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    <%# <%= stylesheet_pack_tag 'application', media: 'all' <!-- Uncomment if you import CSS in app/javascript/packs/application.js --> %> %>
   </head>
   <body>
     <%= render 'shared/back_button' unless @disable_back %>
@@ -25,6 +25,6 @@
     <%= javascript_include_tag 'application' %>
     <%= render 'shared/navbar' unless @disable_navbar %>
     <%= javascript_pack_tag 'application' %>
-    <%= javascript_pack_tag 'dropdown' %>
+    <%#= javascript_pack_tag 'dropdown' %>
   </body>
 </html>

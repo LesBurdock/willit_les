@@ -66,7 +66,7 @@ module.exports = function(api) {
         {
           async: false
         }
-      ]
+      ],["@babel/plugin-transform-private-property-in-object", { "loose": true }],["@babel/plugin-transform-private-methods", { "loose": true }]
     ].filter(Boolean)
   }
 }
